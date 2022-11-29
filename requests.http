@@ -1,0 +1,45 @@
+
+GET http://0.0.0.0:8080
+Content-Type: application/json
+
+###
+
+POST http://0.0.0.0:8080/notifications
+Content-Type: application/json
+
+{
+    "header": "rat",
+    "description": "ratratrat",
+    "owner": "rat"
+}
+
+###
+
+GET http://0.0.0.0:8080/notifications/1
+Content-Type: application/json
+
+###
+
+PATCH http://0.0.0.0:8080/notifications/1
+Content-Type: application/json
+
+{
+    "header": "cat",
+    "description": "catcatcat",
+    "owner": "cat"
+}
+
+###
+
+DELETE http://0.0.0.0:8080/notifications/1
+Content-Type: application/json
+
+###
+
+POST http://0.0.0.0:8080/send
+Content-Type: application/json
+
+###
+
+GET http://0.0.0.0:8080/task_status/caa10834-cec6-48d1-9322-eaab3808726b
+Content-Type: application/json
